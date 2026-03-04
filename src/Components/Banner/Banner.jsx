@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="max-w-7xl mx-auto p-12">
+        <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
 
                 <div className="flex flex-col items-center justify-center p-8 rounded-2xl bg-linear-to-br from-[#632EE3] to-[#9F62F2]">
@@ -15,6 +15,10 @@ const Banner = () => {
                     <span className="text-5xl font-bold mt-2">0</span>
                 </div>
 
+            </div>
+            <div className='flex justify-between mt-8 mb-4'>
+                <div className='text-4xl font-bold'>Customer Tickets:</div>
+                <div className='mr-8 md:mr-35 text-4xl font-bold'>Task Status:</div>
             </div>
         </div>
     );

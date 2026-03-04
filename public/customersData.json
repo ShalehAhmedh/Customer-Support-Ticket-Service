@@ -6,7 +6,7 @@
     "customer": "Rahim Uddin",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2026-03-01T09:15:00Z"
+    "createdAt": "2026-03-01"
   },
   {
     "id": 1002,
@@ -15,7 +15,7 @@
     "customer": "Karim Ahmed",
     "priority": "Critical",
     "status": "In_Progress",
-    "createdAt": "2026-03-01T11:30:00Z"
+    "createdAt": "2026-03-01"
   },
   {
     "id": 1003,
@@ -24,7 +24,7 @@
     "customer": "Nusrat Jahan",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2026-03-02T08:45:00Z"
+    "createdAt": "2026-03-02"
   },
   {
     "id": 1004,
@@ -33,7 +33,7 @@
     "customer": "Sabbir Hossain",
     "priority": "Low",
     "status": "Resolved",
-    "createdAt": "2026-02-28T14:20:00Z"
+    "createdAt": "2026-02-28"
   },
   {
     "id": 1005,
@@ -42,7 +42,7 @@
     "customer": "Farzana Akter",
     "priority": "High",
     "status": "In_Progress",
-    "createdAt": "2026-03-02T10:05:00Z"
+    "createdAt": "2026-03-02"
   },
   {
     "id": 1006,
@@ -51,7 +51,7 @@
     "customer": "Tanvir Hasan",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2026-03-02T12:40:00Z"
+    "createdAt": "2026-03-02"
   },
   {
     "id": 1007,
@@ -60,7 +60,7 @@
     "customer": "Jannatul Ferdous",
     "priority": "Medium",
     "status": "In_Progress",
-    "createdAt": "2026-03-03T07:25:00Z"
+    "createdAt": "2026-03-03"
   },
   {
     "id": 1008,
@@ -69,7 +69,7 @@
     "customer": "Mehedi Rahman",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2026-03-03T08:10:00Z"
+    "createdAt": "2026-03-03"
   },
   {
     "id": 1009,
@@ -78,7 +78,7 @@
     "customer": "Sumaiya Islam",
     "priority": "High",
     "status": "Resolved",
-    "createdAt": "2026-03-01T16:55:00Z"
+    "createdAt": "2026-03-01"
   },
   {
     "id": 1010,
@@ -87,6 +87,6 @@
     "customer": "Rafid Chowdhury",
     "priority": "Low",
     "status": "Open",
-    "createdAt": "2026-03-03T09:00:00Z"
+    "createdAt": "2026-03-03"
   }
 ]
