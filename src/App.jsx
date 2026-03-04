@@ -14,13 +14,14 @@ const ticketsPromise = fetchCustomerTickets()
 
 
 function App() {
-  const[inProgress, setInProgress]=useState(0);
+  const [inProgress, setInProgress] = useState(0);
+  const [selectedTicket, setSelectedTicket] = useState([])
   return (
     <>
       <Navbar></Navbar>
       <Banner inProgress={inProgress}></Banner>
       <Suspense fallback={<span className="loading loading-infinity loading-xl"></span>}>
-        <CustomerTickets inProgress={inProgress} setInProgress={setInProgress} ticketsPromise={ticketsPromise}></CustomerTickets>
+        <CustomerTickets selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket} inProgress={inProgress} setInProgress={setInProgress} ticketsPromise={ticketsPromise}></CustomerTickets>
       </Suspense>
     </>
   )
