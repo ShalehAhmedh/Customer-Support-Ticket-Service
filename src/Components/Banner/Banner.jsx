@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Banner = ({inProgress}) => {
+const Banner = ({inProgress,resolvedCount}) => {
+
     return (
         <div className="max-w-7xl mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
@@ -12,7 +13,7 @@ const Banner = ({inProgress}) => {
 
                 <div className="flex flex-col items-center justify-center p-8 rounded-2xl bg-linear-to-r from-[#54CF68] to-[#00827A]">
                     <h2 className="text-4xl font-bold">Resolved</h2>
-                    <span className="text-5xl font-bold mt-2">0</span>
+                    <span className="text-5xl font-bold mt-2">{resolvedCount}</span>
                 </div>
 
             </div>

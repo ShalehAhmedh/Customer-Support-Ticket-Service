@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Ticket = ({ticket,inProgress,setInProgress,selectedTicket,setSelectedTicket}) => {
     const [isSelected, setIsSelected]=useState(false)
-    console.log(ticket.priority)
+    // console.log(ticket.priority)
     return (
         <div className=''>
             <div>
@@ -13,9 +13,9 @@ const Ticket = ({ticket,inProgress,setInProgress,selectedTicket,setSelectedTicke
                         setSelectedTicket([...selectedTicket,ticket])
                     }} className={`btn rounded-2xl ${isSelected?"bg-[#F8F3B9] text-[#9C7700]":"bg-green-300 text-green-800"} px-3 py-1 items-center ml-2`}>{isSelected?"In Progress":"Open"}</button></div>
                     <div><p className='text-gray-800'>{ticket.description}</p></div>
-                    <div className='flex justify-between'>
-                        <div className='text-[#627382]'>{ticket.id}<span className={`ml-1 text-md font-medium ${ticket.id=='High'?"text-red-600":"text-red-950"}`}>{ticket.priority}</span></div>
-                        <div className='text-sm text-gray-700'>{ticket.customer}<span className='ml-1 text-sm text-gray-700'>{ticket.createdAt}</span></div>
+                    <div className='flex justify-between mt-3'>
+                        <div className='text-[#627382] mr-2'>#{ticket.id}<span className={`ml-1 text-md font-medium ${ticket.priority=='High'?"text-red-600":"text-[#FEBB0C]"}`}>{ticket.priority}</span></div>
+                        <div className='text-sm text-gray-700'>{ticket.customer}<span className='ml-2 text-sm text-gray-700'>{ticket.createdAt}</span></div>
                     </div>
                 </div>
             </div>

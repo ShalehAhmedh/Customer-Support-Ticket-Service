@@ -13,7 +13,7 @@
     "title": "Payment Failed",
     "description": "Payment deducted but order not confirmed.",
     "customer": "Karim Ahmed",
-    "priority": "Critical",
+    "priority": "Medium",
     "status": "In_Progress",
     "createdAt": "2026-03-01"
   },
@@ -31,7 +31,7 @@
     "title": "Website Loading Slow",
     "description": "Homepage takes too long to load on mobile.",
     "customer": "Sabbir Hossain",
-    "priority": "Low",
+    "priority": "High",
     "status": "Resolved",
     "createdAt": "2026-02-28"
   },
@@ -49,7 +49,7 @@
     "title": "Order Not Delivered",
     "description": "Customer has not received the order after 7 days.",
     "customer": "Tanvir Hasan",
-    "priority": "High",
+    "priority": "Medium",
     "status": "Open",
     "createdAt": "2026-03-02"
   },
@@ -67,7 +67,7 @@
     "title": "App Crashing",
     "description": "Mobile app crashes when opening profile section.",
     "customer": "Mehedi Rahman",
-    "priority": "Critical",
+    "priority": "Medium",
     "status": "Open",
     "createdAt": "2026-03-03"
   },
@@ -85,7 +85,7 @@
     "title": "Feature Request",
     "description": "Customer suggested adding dark mode feature.",
     "customer": "Rafid Chowdhury",
-    "priority": "Low",
+    "priority": "Medium",
     "status": "Open",
     "createdAt": "2026-03-03"
   }
