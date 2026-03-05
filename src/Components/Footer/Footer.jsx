@@ -28,10 +28,10 @@ const Footer = () => {
   </nav>
   <nav>
     <h6 className="font-bold text-white text-xl">Social Links</h6>
-    <a className="link link-hover">@CS — Ticket System</a>
-    <a className="link link-hover">@CS — Ticket System</a>
-    <a className="link link-hover">@CS — Ticket System</a>
-    <a className="link link-hover">suuport@cst.com</a>
+    <a className="link link-hover">X @CS — Ticket System</a>
+    <a className="link link-hover">In @CS — Ticket System</a>
+    <a className="link link-hover">f @CS — Ticket System</a>
+    <a className="link link-hover">suport@cst.com</a>
   </nav>
 </footer>
     );

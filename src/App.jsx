@@ -6,6 +6,9 @@ import CustomerTickets from './Components/CustomerTickets/CustomerTickets';
 import InProgressCard from './Components/InProgressCard/InProgressCard';
 import { Suspense, useState } from 'react';
 import Footer from './Components/Footer/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTicketAlt, faCheck, faUser } from '@fortawesome/free-solid-svg-icons';
+library.add(faTicketAlt, faCheck, faUser);
 
 const fetchCustomerTickets = async () => {
   const res = await fetch("/customersData.json")
@@ -20,7 +23,10 @@ function App() {
   const [selectedTicket, setSelectedTicket] = useState([]);
   const [resolvedCount, setResolvedCount] = useState(0);
 const removedInProgress=(t)=>{
-
+  console.log(t);
+  const filteredTicket=selectedTicket.filter(prog=>prog.customer!==t.customer)
+  console.log(filteredTicket);
+  setSelectedTicket(filteredTicket);
 }
   return (
     <>

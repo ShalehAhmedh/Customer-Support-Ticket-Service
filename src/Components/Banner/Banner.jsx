@@ -12,7 +12,7 @@ const Banner = ({inProgress,resolvedCount}) => {
                 </div>
 
                 <div className="flex flex-col items-center justify-center p-8 rounded-2xl bg-linear-to-r from-[#54CF68] to-[#00827A]">
-                    <h2 className="text-4xl font-bold">Resolved</h2>
+                    <h2 className="text-6xl font-bold">Resolved</h2>
                     <span className="text-5xl font-bold mt-2">{resolvedCount}</span>
                 </div>
 
