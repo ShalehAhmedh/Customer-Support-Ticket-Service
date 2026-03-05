@@ -1,0 +1,15 @@
+1. What is JSX, and why is it used?
+
+Answer: JSX is javascript xml. it is like html but its a javascript program in react.
+
+2. What is the difference between State and Props?
+Answer: Props is immutable, external data passed from a parent to child. and state is mutable, internal data managing within components.
+
+3. What is the useState hook, and how does it work?
+Answer: The useState hook allows to add state variables to function components.
+
+4. How can you share state between components in React?
+Answer: Lifting state up and external state management libraries.
+
+5. How is event handling done in React?
+Answer: Event handling is similar to html. In JSX, onClick is one of the event handling in React.
