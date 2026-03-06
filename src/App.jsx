@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTicketAlt, faCheck, faUser } from '@fortawesome/free-solid-svg-icons';
 library.add(faTicketAlt, faCheck, faUser);
+  import { ToastContainer } from 'react-toastify';
+
 
 const fetchCustomerTickets = async () => {
   const res = await fetch("/customersData.json")
@@ -36,6 +38,7 @@ const removedInProgress=(t)=>{
         <CustomerTickets removedInProgress={removedInProgress} resolvedCount={resolvedCount} setResolvedCount={setResolvedCount} selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket} inProgress={inProgress} setInProgress={setInProgress} ticketsPromise={ticketsPromise}></CustomerTickets>
       </Suspense>
       <Footer></Footer>
+      <ToastContainer />
     </>
   )
 }

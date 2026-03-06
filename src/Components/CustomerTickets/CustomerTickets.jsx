@@ -20,7 +20,7 @@ const CustomerTickets = ({ ticketsPromise, inProgress, setInProgress, selectedTi
                     selectedTicket.map(ticket => <InProgressCard removedInProgress={removedInProgress} inProgress={inProgress} setInProgress={setInProgress} resolvedCount={resolvedCount} setResolvedCount={setResolvedCount} ticket={ticket}></InProgressCard>)
                 }
                 <div className='mx-10'>
-                    <p className='text-xl font-bold text-white mb-2'>Resolved Task</p>
+                    <p className='text-xl font-bold text-gray-800 mb-2'>Resolved Task</p>
                     <p className='bg-sky-200 rounded-2xl text-lg font-medium text-gray-700'>No resolved tasks yet.</p>
                 </div>
 

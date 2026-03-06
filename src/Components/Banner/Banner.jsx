@@ -18,8 +18,8 @@ const Banner = ({inProgress,resolvedCount}) => {
 
             </div>
             <div className='flex justify-between mt-8 mb-4'>
-                <div className='text-4xl font-bold'>Customer Tickets:</div>
-                <div className='mr-8 md:mr-20 text-4xl font-bold'>Task Status:</div>
+                <div className='text-4xl font-bold text-gray-800'>Customer Tickets:</div>
+                <div className='mr-8 md:mr-20 text-4xl font-bold text-gray-800'>Task Status:</div>
             </div>
         </div>
     );

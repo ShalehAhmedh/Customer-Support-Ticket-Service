@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react'
+import { toast } from 'react-toastify';
 
 const InProgressCard = ({ticket,resolvedCount,setResolvedCount,inProgress,setInProgress,removedInProgress}) => {
     // console.log(resolvedCount);
@@ -13,6 +14,7 @@ const InProgressCard = ({ticket,resolvedCount,setResolvedCount,inProgress,setInP
             <div className='bg-white rounded-2xl ml-8'>
                 <p className='text-xl font-bold text-gray-800 py-2'>{ticket.title}</p>
                 <button onClick={() => {
+                    toast("Ticket Resolved!!");
                     handleRemove();
                     setIsSelected(true);
                     setResolvedCount(resolvedCount + 1);
