@@ -2,13 +2,18 @@ import React from 'react';
 import { useState } from 'react'
 import { toast } from 'react-toastify';
 
-const InProgressCard = ({ticket,resolvedCount,setResolvedCount,inProgress,setInProgress,removedInProgress}) => {
+const InProgressCard = ({ticket,resolvedCount,setResolvedCount,inProgress,setInProgress,removedInProgress,removedTicket, tickets}) => {
     // console.log(resolvedCount);
     // const [isVisible, setIsVisible] = React.useState(true);
     const [isSelected, setIsSelected]=useState(false);
     const handleRemove=()=>{
-        removedInProgress(ticket);
+        removedInProgress();
     }
+
+    // const handleRemovedTicket=()=>{
+    //     removedTicket();
+    // }
+
     return (
         <div className=''>
             <div className='bg-white rounded-2xl ml-8'>
@@ -16,6 +21,7 @@ const InProgressCard = ({ticket,resolvedCount,setResolvedCount,inProgress,setInP
                 <button onClick={() => {
                     toast("Ticket Resolved!!");
                     handleRemove();
+                    handleRemovedTicket();
                     setIsSelected(true);
                     setResolvedCount(resolvedCount + 1);
                     setInProgress(inProgress-1);

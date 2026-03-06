@@ -30,6 +30,7 @@ const removedInProgress=(t)=>{
   console.log(filteredTicket);
   setSelectedTicket(filteredTicket);
 }
+
   return (
     <>
       <Navbar></Navbar>

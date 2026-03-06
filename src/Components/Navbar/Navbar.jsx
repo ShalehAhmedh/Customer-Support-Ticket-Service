@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className="shadow-lg mx-auto px-10 py-4 mt-6">
+        <div className="shadow-lg mx-auto px-10 py-3.5">
             <div className="navbar-start">
                 <div className="dropdown hover:via-yellow-500">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Navbar = () => {
                         <li className='text-black font-medium'><a>Contact</a></li>
                     </ul>
                 </div>
-                <a className="btn border-0  hover:via-yellow-500 bg-linear-to-br from-[#632EE3] to-[#9F62F2] items-center"><span className='font-bold'>+</span>New Ticket</a>
+                <a className="btn border-0  hover:via-purple-800 bg-linear-to-br from-[#632EE3] to-[#9F62F2] items-center"><span className='font-bold'>+</span>New Ticket</a>
             </div>
         </div>
     );

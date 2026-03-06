@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="footer sm:footer-horizontal bg-neutral p-10 mt-10">
-  <nav>
+  <nav className='pl-14'>
     <h6 className="font-bold text-white text-2xl">CS — Ticket System</h6>
-    <p>A comprehensive support management platform<br></br>streamlining communication and task resolution for<br></br> customer success.A comprehensive support management<br></br> platform streamlining communication and task<br></br> resolution  for customer success.A comprehensive  <br></br>support management platform — streamlining communication<br></br> and task resolution for customer success.</p>
+    <p>The CS — Ticket System is a specialized customer <br/> support management platform designed to stream <br /> line the lifecycle of service requests from initial <br /> submission to final resolution.</p>
   </nav>
   <nav>
     <h6 className="font-bold text-white text-xl">Company</h6>

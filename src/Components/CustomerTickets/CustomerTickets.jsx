@@ -2,9 +2,15 @@ import React, { use } from 'react';
 import Ticket from '../Ticket/Ticket';
 import InProgressCard from '../InProgressCard/InProgressCard';
 
-const CustomerTickets = ({ ticketsPromise, inProgress, setInProgress, selectedTicket, setSelectedTicket,resolvedCount,setResolvedCount,removedInProgress}) => {
+const CustomerTickets = ({ ticketsPromise, inProgress, setInProgress, selectedTicket, setSelectedTicket,resolvedCount,setResolvedCount,removedInProgress,removedTicket}) => {
     const tickets = use(ticketsPromise)
     // console.log(selectedTicket);
+
+//     const removedTicket=(p)=>{
+//         console.log(p);
+//         const filteredTickets=tickets.filter(tick=>tick.id!==p.id);
+// }
+
     return (
 
         
@@ -12,12 +18,12 @@ const CustomerTickets = ({ ticketsPromise, inProgress, setInProgress, selectedTi
         <div className='flex max-w-7xl mx-auto'>
             <div className='max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-3'>
                 {
-                    tickets.map(ticket => <Ticket removedInProgress={removedInProgress} selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket}  inProgress={inProgress} setInProgress={setInProgress} ticket={ticket}></Ticket>)
+                    tickets.map(ticket => <Ticket key={ticket.id} removedInProgress={removedInProgress} selectedTicket={selectedTicket} setSelectedTicket={setSelectedTicket}  inProgress={inProgress} setInProgress={setInProgress} ticket={ticket}></Ticket>)
                 }
             </div>
-            <div className='grid grid-cols-1/2 ml-5 text-center'>
+            <div className='grid grid-cols-1 md:grid-cols-1/2 ml-5 text-center'>
                 {
-                    selectedTicket.map(ticket => <InProgressCard removedInProgress={removedInProgress} inProgress={inProgress} setInProgress={setInProgress} resolvedCount={resolvedCount} setResolvedCount={setResolvedCount} ticket={ticket}></InProgressCard>)
+                    selectedTicket.map(ticket => <InProgressCard tickets={tickets} removedTicket={removedTicket} removedInProgress={removedInProgress} inProgress={inProgress} setInProgress={setInProgress} resolvedCount={resolvedCount} setResolvedCount={setResolvedCount} ticket={ticket}></InProgressCard>)
                 }
                 <div className='mx-10'>
                     <p className='text-xl font-bold text-gray-800 mb-2'>Resolved Task</p>
