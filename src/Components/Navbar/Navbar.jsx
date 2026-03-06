@@ -19,7 +19,7 @@ const Navbar = () => {
                         <li className='text-black'><a>Contact</a></li>
                     </ul>
                 </div>
-                <a className="text-xl text-black font-bold">CS-Ticket System</a>
+                <a className="text-2xl text-black font-bold">CS — Ticket System</a>
             </div>
             <div className="navbar-end">
                 <div className="navbar-center hidden lg:flex">

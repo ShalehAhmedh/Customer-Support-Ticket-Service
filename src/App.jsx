@@ -7,9 +7,9 @@ import InProgressCard from './Components/InProgressCard/InProgressCard';
 import { Suspense, useState } from 'react';
 import Footer from './Components/Footer/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTicketAlt, faCheck, faUser } from '@fortawesome/free-solid-svg-icons';
-library.add(faTicketAlt, faCheck, faUser);
-  import { ToastContainer } from 'react-toastify';
+import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
+library.add(faEnvelope, faLock, faUser);
+import { ToastContainer } from 'react-toastify';
 
 
 const fetchCustomerTickets = async () => {
@@ -19,17 +19,17 @@ const fetchCustomerTickets = async () => {
 
 const ticketsPromise = fetchCustomerTickets()
 
-  
+
 function App() {
   const [inProgress, setInProgress] = useState(0);
   const [selectedTicket, setSelectedTicket] = useState([]);
   const [resolvedCount, setResolvedCount] = useState(0);
-const removedInProgress=(t)=>{
-  console.log(t);
-  const filteredTicket=selectedTicket.filter(prog=>prog.customer!==t.customer)
-  console.log(filteredTicket);
-  setSelectedTicket(filteredTicket);
-}
+  const removedInProgress = (t) => {
+    console.log(t);
+    const filteredTicket = selectedTicket.filter(prog => prog.customer !== t.customer)
+    console.log(filteredTicket);
+    setSelectedTicket(filteredTicket);
+  }
 
   return (
     <>
